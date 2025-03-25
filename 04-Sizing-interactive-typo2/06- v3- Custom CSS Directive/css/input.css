@@ -1,0 +1,32 @@
+@import "tailwindcss";
+ 
+@layer components{
+
+    .btn{
+        @apply  font-semibold px-7 py-2 rounded-lg m-1 shadow-xl hover:-translate-y-1 duration-500 
+      }
+      
+      .btn-primary {
+        @apply bg-blue-500 text-white hover:text-blue-100
+      
+      }
+      .btn-secondary {
+        @apply bg-orange-700 text-white hover:text-orange-100
+      
+      }
+
+      .card {
+        @apply p-7 rounded-xl border m-2 shadow-lg bg-white
+      }
+}
+
+@layer base {
+
+    h2{ 
+        /* @apply text-2xl font-bold mb-2 */
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--color-red-950); 
+    }
+}

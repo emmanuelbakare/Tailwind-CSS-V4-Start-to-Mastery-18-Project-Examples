@@ -1,0 +1,29 @@
+@import "tailwindcss";
+ 
+/* @layer utilities {
+    @keyframes rotator {
+      0%, 50%, 100% { transform: rotate(0deg); }
+      20%, 80% { transform: rotate(20deg); }
+    }
+  
+}
+ 
+@utility animate-rotate-20{
+    animation: rotator 1s ease-in-out forwards;
+} */
+
+@layer utilities {
+    @keyframes dangler {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(20deg); }
+    }
+
+}
+ 
+@utility dangle{
+  animation: dangler 1s ease-in-out forwards; 
+}
+
+
+/* Transform(rotation)    0d-----20d--------0d--------20d----0d   */
+/* Keyframes(%)           0|-----20-----40-----60-----80-----|100 */

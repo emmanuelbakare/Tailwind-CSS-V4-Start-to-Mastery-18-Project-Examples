@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+    --circle-size-sm: 3rem;
+    --circle-size-md: 5rem;
+    --circle-size-lg: 7rem;
+    --circle-size-xl: 10rem;
+    --radius-full: 9999px;
+
+}
+    
+ 
+
+
+
+
+
+@utility circle-*{
+    height: --value(--circle-size-*);
+    width: --value(--circle-size-*);
+    border-radius: var(--radius-full);  
+
+     @apply flex justify-center items-center font-bold;  
+     
+}
+
+
+
+
+/* @utility circle-*{
+    width:calc(--value(integer) * 0.25rem);
+    height: calc(--value(integer) * 0.25rem);
+    border-radius: var(--radius-full);
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 700;
+     
+} */
+
+ 
+ 
+/* @utility circle-* {
+    height: --value(--circle-size-*, integer);
+    width: --value(--circle-size-*,  integer);
+    border-radius: var(--radius-full);
+} */
+
+ 

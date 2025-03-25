@@ -1,0 +1,29 @@
+@theme {
+
+    
+    --circle-size-sm: 3rem;
+    --circle-size-md: 5rem;
+    --circle-size-lg: 7rem;
+    --circle-size-xl: 10rem;
+
+    --radius-full: 9999px;
+}
+
+/*================= Dyanmic Classes====================== */
+
+
+@utility circle-*{
+    width:--value(--circle-size-*) ;
+    height: --value(--circle-size-*);
+    border-radius:var(--radius-full);
+ }
+ 
+ /* @utility circle-*{
+    width: calc(--value(integer) * 0.25rem);
+    height: calc(--value(integer) * 0.25rem);
+    border-radius: var(--radius-full);
+ 
+    @variant hover {
+        @apply scale-105 duration-500 
+    }
+ } */

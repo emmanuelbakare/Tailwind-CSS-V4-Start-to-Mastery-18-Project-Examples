@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .grad1 {
+       @apply  font-bold text-xl rounded-lg h-14 border border-gray-300  text-center mb-2; 
+    }
+
+    .inliner {
+        @apply size-20 m-1 inline-block
+    }
+    .inliner2 {
+        @apply size-20 m-1 inline-block rounded-full border border-gray-300
+    }
+    .center1 {
+        @apply flex justify-center items-center text-3xl text-white  m-3
+    }
+
+    .squeeze {
+        @apply hover:rotate-x-50  duration-500 
+    }
+
+    .crouch {
+        @apply hover:rotate-x-50 hover:translate-y-10 duration-500
+    }
+    .slant {
+        @apply hover:rotate-x-70  hover:rotate-z-65   duration-500 hover:shadow-xl  hover:shadow-gray-900 
+    }
+   
+}

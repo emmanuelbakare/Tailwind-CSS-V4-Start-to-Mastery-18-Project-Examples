@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <!-- Adding image  -->
+     <!-- <div class="bg-[url('../images/1.jpg')] h-44"></div>
+     <div style="background-image: url('images/2.jpg');" class="h-44"></div> -->
+     
+     <!-- Background Color -->  
+      <!-- <div class="bg-cyan-500 inliner " ></div>  
+      <div class="bg-cyan-200 inliner " ></div>  
+      <div class="bg-red-300 inliner" ></div>  
+      <div class="bg-green-300 inliner" ></div>  
+      <div class="bg-orange-300 inliner " ></div>   -->
+
+    <!--  LINEAR GRADIENT
+   bg-linear-[0-330 (30 int)][to-l|t|b|t|tr|tl|br|bl] -->
+
+   <!-- 1 Color Linear Gradient with side angles-->
+   <!-- <div class="m-3 p-3">
+    <div class="grad1 bg-linear-to-t from-cyan-200">to-t</div>
+    <div class="grad1 bg-linear-to-r from-cyan-200">to-r</div>
+    <div class="grad1 bg-linear-to-b from-cyan-200 ">to-b</div>
+    <div class="grad1 bg-linear-to-l from-cyan-200">to-l</div>
+   </div> -->
+
+   <!-- 2 Color Linear Gradient with side angles--> 
+   <!-- <div class="m-3 p-3">
+    <div class="grad1 bg-linear-to-t from-cyan-200 to-blue-500">to-t</div>
+    <div class="grad1 bg-linear-to-r from-cyan-200 to-blue-500">to-r</div>
+    <div class="grad1 bg-linear-to-b from-cyan-200 to-blue-500 ">to-b</div>
+    <div class="grad1 bg-linear-to-l from-cyan-200 to-blue-500">to-l</div>
+    <div class="grad1 bg-linear-to-tl from-cyan-200 to-blue-500">to-tl</div>
+    <div class="grad1 bg-linear-to-tr from-cyan-200 to-blue-500">to-tr</div>
+    <div class="grad1 bg-linear-to-br from-cyan-200 to-blue-500">to-br</div>
+    <div class="grad1 bg-linear-to-bl from-cyan-200 to-blue-500">to-bl</div>
+   </div> -->
+
+  <!-- 2 Color Linear Gradient with degree angles--> 
+  <!-- <div class="m-3 p-3">
+    <div class="grad1 bg-linear-0  from-cyan-200 to-blue-500">to-t</div>
+    <div class="grad1 bg-linear-90 from-cyan-200 to-blue-500">to-r</div>
+    <div class="grad1 bg-linear-180 from-cyan-200 to-blue-500 ">to-b</div>
+    <div class="grad1 bg-linear-240 from-cyan-200 to-blue-500">to-l</div>
+   </div> -->
+
+   <!-- 3 Linear Gradient (Color Stops)--> 
+   <!-- <div class="m-3 p-3"> 
+      <div class="grad1 bg-linear-90 from-cyan-200 via-green-500    to-red-300 to-70%"></div>
+      <div class="grad1 bg-linear-90 from-cyan-200 from-30% via-green-500 via-30%   to-red-300 to-70%"></div>
+      <div class="grad1 bg-linear-[90deg,red_30%,yellow_60%,lime_90%,blue]"> </div> -->
+
+      <!-- Radial Gradient  --> 
+       <div class="m-2">
+          <div class="outliner2 bg-radial from-cyan-200 to-blue-500"></div>
+          <div class="outliner2 bg-radial from-cyan-200 from-10% via-indigo-500 via-50%  to-blue-500"></div>  
+          <div class="outliner2 bg-radial-[at_40%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"></div>     
+          <div class="outliner2 bg-radial-[at_25%_25%] from-white from-5%  to-zinc-900 to-75%"></div>
+       </div>
+
+
+           <!--conic Gradients-->
+           <!-- <div class="m-2">
+            <div class="outliner2 bg-conic from-cyan-200 to-blue-500"></div> 
+            <div class="outliner2 bg-conic from-cyan-200 from-10% via-indigo-500 via-50%  to-blue-500"></div>  
+            <div class="outliner2 bg-conic-[at_40%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"></div>     
+            <div class="outliner2 bg-conic-[at_25%_25%] from-white from-5%  to-zinc-900 to-75%"></div>
+         </div> -->
+
+            <!-- Color Interpolation Modifier -->
+            <!-- srgb, hsl, oklab, oklch, *longer, shorter,  *increasing, decreasing -->
+
+            <div class="grad1 bg-linear-90/oklab from-indigo-500 to-teal-400"></div>
+            <div class="grad1 bg-linear-90/longer  from-indigo-500 to-teal-400"></div>
+            <div class="grad1 bg-linear-90/increasing  from-indigo-500 to-teal-400"></div>
+            <div class="outliner2 bg-conic/decreasing  from-violet-700 via-lime-300 to-violet-700 "></div>
+
+             
+  
+         
+
+   </div> 
+  </body>
+</html> 

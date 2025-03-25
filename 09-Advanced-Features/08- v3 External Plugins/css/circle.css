@@ -1,0 +1,16 @@
+@theme {
+
+    --circle-size-sm: 3rem;
+    --circle-size-md: 5rem;
+    --circle-size-lg: 7rem;
+    --circle-size-xl: 10rem;
+}
+
+
+
+@utility circle-*{
+    height: --value(--circle-size-*);
+    width: --value(--circle-size-*);
+    border-radius: theme(borderRadius.full);
+    @apply flex justify-center items-center font-bold;
+}

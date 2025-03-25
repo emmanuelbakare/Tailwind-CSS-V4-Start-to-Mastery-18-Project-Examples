@@ -1,0 +1,41 @@
+@theme {
+    --color-orange-100: #ffedd5; /* Light orange shade */
+    --color-orange-300: #fdba74; 
+    --color-orange-500: #f97316; /* Medium orange shade */
+
+
+   
+  }
+
+@layer base {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+  
+  /* Component styles (equivalent to addComponents) */
+  @layer components {
+    .btn {
+      padding: 8px 16px;
+      border-radius: 7px;
+      border-width: 2px;
+    }
+  }
+  
+  /* Utility styles (equivalent to addUtilities) */
+  @layer utilities{
+
+    .bg-gradient-orange {
+        background: linear-gradient(90deg, var(--color-orange-300), var(--color-orange-500));
+        color: white; 
+    
+        @variant hover {
+            color: white;
+            box-shadow: 0 0 5px 2px var(--color-orange-300);
+        }
+    
+      }
+  }

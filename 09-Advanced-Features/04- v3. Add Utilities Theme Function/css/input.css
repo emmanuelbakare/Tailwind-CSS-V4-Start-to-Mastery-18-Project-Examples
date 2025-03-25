@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+    --color-orange-1: #ffedd5; /* Light orange shade */
+    --color-orange-3: #fdba74; 
+    --color-orange-5: #f97316; /* Medium orange shade */
+  }
+
+/* Base styles (equivalent to addBase) */
+@layer base {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+  
+  /* Component styles (equivalent to addComponents) */
+  @layer components {
+    .btn {
+      padding: 8px 16px;
+      border-radius: 7px;
+      border-width: 2px;
+    }
+  }
+  
+  /* Utility styles (equivalent to addUtilities) */
+  @layer utilities{
+
+    /* .bg-gradient-orange {
+        background: linear-gradient(90deg, var(--color-orange-3), var(--color-orange-5));
+        color: white; 
+    
+        @variant hover {
+            box-shadow: 0 0 5px 2px var(--color-orange-3);
+        }
+    
+      } */
+
+      .bg-gradient-orange { 
+        /* background: linear-gradient(90deg, var(--color-orange-3), var(--color-orange-5));
+        color: white;  */
+
+        @apply bg-linear-90 from-orange-3 to-orange-5 text-white;
+      }
+
+      .bg-gradient-orange:hover{
+        box-shadow: 0 0 5px 2px var(--color-orange-3);
+      }
+  }

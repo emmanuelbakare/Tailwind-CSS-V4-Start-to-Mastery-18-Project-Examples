@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer utilities {
+    @keyframes rotator {
+      0%, 100% { transform: rotate(0deg) translateX(0); }
+      50% { transform: rotate(20deg) translateX(-70px); }
+    }
+  
+}
+ 
+@utility dangle{
+    animation: rotator 1s ease-in-out infinite;
+}
+
+  

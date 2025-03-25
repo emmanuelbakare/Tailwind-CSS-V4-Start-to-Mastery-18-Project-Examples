@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer components{
+    .center {
+        @apply flex justify-center items-center min-h-screen
+    }
+}
+ 

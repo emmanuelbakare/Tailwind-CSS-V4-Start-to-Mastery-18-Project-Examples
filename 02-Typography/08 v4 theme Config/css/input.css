@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+    --*: initial;
+    --color-mint-500: #46bba5;
+    --color-midnight: #121063;
+}
+
+:root{
+    --bigger-text: 2.5rem;
+}
+
+.mint {
+    /* background-color: var(--color-red-500); */
+    background-color: var(--color-midnight);
+    /* background-color:theme(color.red.500) */
+    color: var(--color-blue-100);
+    font-size: var(--bigger-text); 
+    
+}

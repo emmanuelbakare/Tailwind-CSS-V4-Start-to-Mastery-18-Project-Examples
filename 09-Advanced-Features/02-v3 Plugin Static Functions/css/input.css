@@ -1,0 +1,21 @@
+@import "tailwindcss";
+ 
+
+@layer base {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+  
+  
+  @layer components {
+    .btn {
+      padding: 8px 16px;
+      border-radius: 7px;
+      border-width: 1px;
+      border-color: var(--color-gray-300);
+    }
+  }

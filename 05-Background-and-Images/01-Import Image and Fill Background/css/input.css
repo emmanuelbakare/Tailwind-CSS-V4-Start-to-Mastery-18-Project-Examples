@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@layer utilities{
+    .grad1 {
+        @apply font-bold text-xl rounded-lg h-14 border border-gray-300 text-center mb-2
+    }
+    .inliner {
+        @apply size-20 m-1 inline-block
+    }
+
+    .outliner2 {
+        @apply size-24 border border-gray-300 rounded-full m-1 inline-block 
+    }
+}

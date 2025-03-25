@@ -1,0 +1,6 @@
+@import "tailwindcss";
+ @plugin '@tailwindcss/forms'
+
+ /* ensure you have installed tailwindcss/forms with
+  > npm install @tailwindcss/forms 
+  then you can add  @plugin '@tailwindcss/forms' */
