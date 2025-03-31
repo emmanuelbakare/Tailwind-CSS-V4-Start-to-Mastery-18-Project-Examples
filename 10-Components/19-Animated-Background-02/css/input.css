@@ -1,0 +1,45 @@
+@import "tailwindcss";
+ 
+ 
+
+@layer utilities{
+    .centerhv {
+        @apply flex items-center justify-center h-screen
+    }
+
+    .anim-flow{
+        animation: squarePath 25s ease infinite; 
+        background-size: 400% 400%;
+    } 
+}
+
+
+
+@keyframes leftRightPath{
+    0%, 100% {background-position: 0% 50%}  /*Left Center */
+    50% {background-position: 100% 50%}  /*right Center */
+}
+
+@keyframes topBottomPath {
+    0%, 100% {background-position: 50% 0%; /*Hv Start at Top Center */}
+    50% {background-position: 50% 100%; /*Hv Move to Bottom Center */}
+ }
+
+ @keyframes TopLeftBottomRightPath {
+    0%, 100% {background-position: 0% 0%; /* Start at Top Left */}
+    50% {background-position: 100% 100%; /* Move to Bottom Right */}
+}
+
+@keyframes gradientTrianglePath {
+    0%, 100% { background-position: 0% 0%; /* Start Top Left */}
+    33% { background-position: 100% 100%; /* Move to Bottom Right */}
+    66% {background-position: 0% 100%; /* Move to Bottom Left */
+    }
+  }
+@keyframes squarePath {
+    0%, 100% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%;  }
+    50% { background-position: 0% 100%}  
+  }
+  
+  

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+ @layer base {
+
+    body {
+        @apply bg-radial from-indigo-700 via-purple-500 to-blue-900; 
+
+        background-size: 400% 400%;
+
+        animation:squarePath 15s ease infinite;
+    }
+   
+ }
+
+ @layer utilities {
+    .centerhv{
+        @apply flex items-center justify-center min-h-screen ;
+    }
+ }
+
+ @keyframes leftRightPath{
+     0%, 100% {background-position: 0% 50%} /* Hv  */
+     50% {background-position: 100% 50%} /* Hv  */
+ }
+
+ @keyframes topBottomPath{
+    0%, 100% {background-position: 50% 0%} /* Hv  */
+    50% {background-position: 50% 100%} /* Hv  */
+ }
+
+ @keyframes TopLeftBottomRightPath {
+    0%, 100% {background-position: 0% 0%; /* Start at Top Left */}
+    50% {background-position: 100% 100%; /* Move to Bottom Right */}
+}
+
+
+@keyframes gradientTrianglePath {
+    0%, 100% { background-position: 0% 0%; /* Start Top Left */}
+    33% { background-position: 100% 100%; /* Move to Bottom Right */}
+    66% {background-position: 0% 100%; /* Move to Bottom Left */
+    }
+  }
+
+  @keyframes squarePath {
+    0%, 100% { background-position: 0% 0%; } /* Start Top Left */
+    25% { background-position: 100% 0%;  }  /* Start Top Right */
+    50% { background-position: 0% 100%}  /* Move to Bottom Left */
+  }
+ 

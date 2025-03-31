@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    
+    <div class="bg-radial-[at_50%_10%] from-gray-100 to-gray-400 to-80%  h-screen">
+ 
+            <div class="bg-white py-5 px-3 shadow-xs" >
+                <div class="flex items-center justify-between  ">
+                    <!-- Left side: Logo  -->
+                     <div class="flex text-orange-700"> 
+                        <svg class="w-6 h-6  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd" d="M3.94343 4.87524C4.00931 3.82117 4.88341 3 5.93953 3h9.12107c1.0562 0 1.9303.82117 1.9961 1.87524L17.0645 5h2.9356c.5523 0 1 .44772 1 1v3.85927c0 1.67173-.8355 3.23293-2.2265 4.16023l-1.0995.733L17.752 16H3.24813l.6953-11.12476ZM17.5298 12.445l.1344-.0896c.8346-.5564 1.3359-1.4931 1.3359-2.49613V7h-1.8106l.3403 5.445ZM10 7c0-.55228-.44772-1-1-1s-1 .44772-1 1v7c0 .5523.44772 1 1 1s1-.4477 1-1V7Zm3 0c0-.55228-.4477-1-1-1s-1 .44772-1 1v7c0 .5523.4477 1 1 1s1-.4477 1-1V7Z" clip-rule="evenodd"/>
+                            <path fill="currentColor" d="m3.12313 18-.0547.8752C2.99647 20.0266 3.91089 21 5.06453 21H15.9356c1.1537 0 2.0681-.9734 1.9961-2.1248L17.877 18H3.12313Z"/>
+                          </svg>
+                          <h5 class="font-semibold">Horizontal</h5>
+                     </div>
+                    
+                    <!-- Right Side: Menu Icon -->
+
+                    <button class="cursor-pointer" onclick="toggleMenuSlide()" > 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 text-gray-800">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg> 
+                    </button>
+
+                     <!-- Sliding Menu -->
+                      <div id="menu" class="fixed top-0 right-0  w-64 h-full bg-white p-5 transform  -translate-y-full translate-x-full duration-300 "> 
+                        <button class="text-gray-600 border border-gray-200 hover:shadow-sm w-full rounded-lg  " onclick="toggleMenuSlide()">Close X</button>
+
+                        <nav class="mt-8 space-y-4"> 
+                            <a href="" class=" block text-lg font-medium text-gray-800 hover:text-blue-600">Home</a> 
+                            <a href="" class=" block text-lg font-medium text-gray-800 hover:text-blue-600">About</a> 
+                            <a href="" class=" block text-lg font-medium text-gray-800 hover:text-blue-600">Services</a> 
+                            <a href="" class=" block text-lg font-medium text-gray-800 hover:text-blue-600">Contact</a> 
+                        </nav>
+                      </div>
+                </div>
+            </div>
+    </div>
+
+    <script>
+
+        function toggleMenuSlide(){
+            const menu = document.getElementById("menu")
+
+            menu.classList.toggle("-translate-y-full")
+            menu.classList.toggle("translate-x-full")
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .centerhv {
+        @apply flex items-center justify-center  min-h-screen 
+    }
+}
+
+@layer base {
+
+    body {
+        /* @apply bg-radial from-indigo-700 via-purple-500 to-blue-900; */
+        /* @apply bg-linear-120 from-indigo-700 via-purple-500 to-blue-900; */
+        /* @apply bg-linear-[120deg,#221e54_20%,#3730a3_20%,#6324c7_35%,#4c1daa_35%,#402d95_55%,#460d9b_55%,#0e3885_85%]; */
+        @apply bg-radial-[_at_10%_25%,#1e1b4b_30%,#3730a3_30%,#5b21b6_65%,#4c1d95_65%,#402d95_85%] h-screen;
+        background-size: 400% 400%;
+        animation: leftRightPath 25s ease infinite;
+    }
+    h1,h2, h3 {
+        @apply font-semibold text-gray-900
+    }
+    h1 { @apply text-4xl mb-2 md:text-5xl md:mb-3 lg:text-6xl}
+    h3 {@apply text-xl md:text-2xl}
+}
+
+@keyframes leftRightPath{
+    0%, 100% {background-position: 0% 50%}  /*Left Center */
+    50% {background-position: 100% 50%}  /*right Center */
+    
+}
+
+ 
